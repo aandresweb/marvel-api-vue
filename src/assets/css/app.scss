@@ -1,0 +1,30 @@
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+@font-face {
+  font-family: "Comic Book";
+  src: url("~@/assets/fonts/Comic-Book.otf");
+}
+@font-face {
+  font-family: "Bangers";
+  src: url("~@/assets/fonts/Bangers.ttf");
+}
+body {
+  min-height: 100vh;
+  background: #cb2d3e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #ef473a,
+    #cb2d3e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #ef473a,
+    #cb2d3e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /*background-color: #ef3e44;*/
+}
+
+.container {
+  max-width: 960px;
+}
