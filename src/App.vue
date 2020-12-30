@@ -3,10 +3,10 @@
     <header-component/>
     <div class="container">
       <div class="controls d-flex justify-content-between pb-4">
-          <div>
+          <div class="col-md-3">
             <input type="text" placeholder="Search a hero..." v-model="searchHero" v-on:keyup="filterByName">
           </div>
-          <div>
+          <div class="col-md-3">
             <select name="quantity" id="quantity" @change="filterByLimit" v-model="limitFilter">
               <option value="0" selected>See the first...</option>
               <option value="20">20</option>
@@ -31,7 +31,7 @@
       </template>
 
       <footer-component />
-      
+
     </div>
 
     <hero-detail-component v-on:hide-modal="hideModal" :hero-detail="heroDetail" v-if="showModalStatus"></hero-detail-component>
@@ -110,7 +110,8 @@ export default {
         padding: .5rem 1.2rem;
         font-size: .8rem;
         color: #fff;
-        font-family: 'Poppins'
+        font-family: 'Poppins';
+        width: 100%;
       }
       input:focus, select:focus{
         outline:none

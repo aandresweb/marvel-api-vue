@@ -72,8 +72,12 @@ export default {
         padding-bottom: 3.5rem;
         border-radius: 10px;
         max-width: 70%;
-        max-height: 80vh;
+        
         overflow: hidden;
+        @media(max-width: 600px){
+            overflow: scroll;
+            max-height: 95vh;
+        }
         .close-hero-modal{
             position: relative;
             left: 100%;
