@@ -29,9 +29,14 @@
             <hero-component v-on:show-modal="showModal" v-for="hero in heros" :key="hero.id" :hero="hero" class="col-md-3" />
         </div>
       </template>
+
+      <footer-component />
+      
     </div>
 
     <hero-detail-component v-on:hide-modal="hideModal" :hero-detail="heroDetail" v-if="showModalStatus"></hero-detail-component>
+
+    
 
 </template>
 
@@ -39,6 +44,7 @@
 import HeaderComponent from './components/HeaderComponent.vue'
 import HeroComponent from './components/HeroComponent.vue'
 import HeroDetailComponent from './components/HeroDetailComponent.vue';
+import FooterComponent from './components/FooterComponent.vue';
 
 import api from './api';
 
@@ -47,7 +53,8 @@ export default {
   components: {
     HeaderComponent,
     HeroComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    FooterComponent
   },
   data() {
     return {
@@ -102,7 +109,8 @@ export default {
         border-radius: 25px;
         padding: .5rem 1.2rem;
         font-size: .8rem;
-        color: #fff
+        color: #fff;
+        font-family: 'Poppins'
       }
       input:focus, select:focus{
         outline:none

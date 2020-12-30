@@ -1,7 +1,7 @@
 <template>
     <div class="item">
         <div class="content-img">
-            <img  :src="getImage(hero.thumbnail.path, hero.thumbnail.extension)" >
+            <img @click="show(hero)"  :src="getImage(hero.thumbnail.path, hero.thumbnail.extension)" >
         </div>
         <div class="content-bottom">
             <p class="title">{{hero.name}}</p> 
@@ -53,6 +53,7 @@ export default {
                height: 246px;
                object-fit: cover;
                border-radius: 5px;
+               cursor: pointer;
             }
         }
         .content-bottom{

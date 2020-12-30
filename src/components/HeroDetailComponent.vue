@@ -80,11 +80,14 @@ export default {
             cursor: pointer
         }
         .hero-modal-img {
-            img {width: 100%};
+            img {
+                width: 100%;
+                cursor: pointer;
+            };
         }
         .content{
             overflow-y: scroll;
-            max-height: 50vh;
+            max-height: 40vh;
         }
         .name {
             font-family: 'Bangers';
