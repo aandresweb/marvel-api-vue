@@ -1,7 +1,7 @@
 <template>
     <div class="container header">
         <h1>Marvel's API</h1>
-        <small>This is just a marvel's api, made whith 🤍</small> 
+        <small>This is just a marvel's api, made with 🤍</small> 
     </div> 
 </template>
 

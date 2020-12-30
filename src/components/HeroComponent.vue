@@ -4,13 +4,16 @@
             <img  :src="getImage(hero.thumbnail.path, hero.thumbnail.extension)" >
         </div>
         <div class="content-bottom">
-            <p class="title">{{hero.name}}</p>
+            <p class="title">{{hero.name}}</p> 
+            <small @click="show(hero)" class="button">See more 🔍</small>
         </div>
     </div>
 </template>
 
 <script>
+
 export default {
+    
     name: 'hero-component',
     props: {
         hero: {}
@@ -18,6 +21,9 @@ export default {
     methods: {
         getImage(path, extension){
             return `${path}.${extension}`
+        },
+        show(hero){
+            this.$emit('show-modal', hero);
         }
     }
 }
@@ -28,13 +34,19 @@ export default {
         min-height: 4rem;
         text-align: center;
         font-family: 'Bangers';
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         .title {
             color: #fff;
             margin: 0;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
         }
-        
+        .button {
+            color: #e1e0e0;
+            cursor: pointer;
+        }
+        .button:hover{
+            text-decoration: underline;
+        }
         .content-img {
             img {
                width: 100%;
@@ -44,8 +56,9 @@ export default {
             }
         }
         .content-bottom{
-            padding-top: 1.5rem;
-            padding-bottom: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #ffffff26;
         }
     }
 </style>
