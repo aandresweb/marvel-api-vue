@@ -9,15 +9,15 @@ Clone repository
 git clone https://github.com/aandresweb/marvel-api-vue
 ```
 
-Run the following script to install package.json dependencies
+Run the following script to install **package.json** dependencies
 ```
 npm install
 ```
+Run the following script to run locally 
+```
+npm run serve
+```
 
-### Lints and fixes files
-```
-npm run lint
-```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
