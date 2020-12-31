@@ -1,13 +1,17 @@
 # Marvel API
 
-### Compiles and hot-reloads for development
+Look for heroes from all over the marvel universe 🤍
+
+### Installation
+
+Clone repository
 ```
-npm run serve
+git clone https://github.com/aandresweb/marvel-api-vue
 ```
 
-### Compiles and minifies for production
+Run the following script to install package.json dependencies
 ```
-npm run build
+npm install
 ```
 
 ### Lints and fixes files
