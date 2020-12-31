@@ -9,6 +9,12 @@ Clone repository
 git clone https://github.com/aandresweb/marvel-api-vue
 ```
 
+Move to folder's project
+
+```
+cd marvel-api-vue
+```
+
 Run the following script to install **package.json** dependencies
 ```
 npm install
