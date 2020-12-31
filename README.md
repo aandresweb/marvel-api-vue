@@ -1,4 +1,4 @@
-# app_marvel_api_vue
+# Marvel API
 
 ## Project setup
 ```
