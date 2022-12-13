@@ -1,6 +1,6 @@
 # Marvel API
 
-Demo:  https://aandresweb.github.io/demo-marvel-api/[https://aandresweb.github.io/demo-marvel-api/]
+Demo:  [https://aandresweb.github.io/demo-marvel-api/]
 
 Look for heroes from all over the marvel universe 🤍
 
