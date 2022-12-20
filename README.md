@@ -1,4 +1,4 @@
-# Demo:  
+# DEMO 
 
 https://marvel-vue.aandresweb.com/
 
